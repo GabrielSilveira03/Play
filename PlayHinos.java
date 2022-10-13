@@ -23,7 +23,8 @@ public class PlayHinos implements IPlay {
 
 	@Override
 	public void stop() {
-		System.out.println("Hino pausado.");
+		System.out.println("Reprodução de hinos interrompida.");
+		indice=0;
 	}
 
 	@Override
@@ -40,8 +41,7 @@ public class PlayHinos implements IPlay {
 
 	@Override
 	public void pause() {
-		System.out.println("Reprodução de hinos interrompida.");
-		indice=0;
+		System.out.println("Hino pausado.");
 	}
 
 	@Override
